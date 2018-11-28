@@ -1,0 +1,97 @@
+body {
+    background-color: #090314;
+    background-image: url("../../images/brickwall.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: snow;
+}
+h1 {
+    font-family: iceland;
+    font-size: 60pt;
+}
+h2 {
+    font-family: nico moji;
+    font-size: 30pt;
+}
+.neon {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+  #navigation {
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    margin-top: 80px;
+  }
+  .nav-option {
+    margin: 1px;
+    width: 30%;
+    height: 80%;
+    margin-top: 40px;
+  }
+  .nav-option h3, .nav-option h4 {
+    width: 100%;
+    text-align: center;
+    color: #42c4db;
+  }
+ .nav-option h3 {
+    font-family: iceland;
+    font-size: 30pt;
+}
+  .nav-option h4 {
+    font-family: nico moji;
+    font-size: 15pt;
+}
+  .nav-option:hover h3 {
+    font-size: 40pt;
+  }
+  .nav-option:hover h4 {
+    font-size: 20pt;
+  }
+  .nav-option:hover h3, .nav-option:hover h4 {
+    color: snow;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow2 {
+    from {
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00d7e6, 0 0 40px #00d7e6, 0 0 50px #00d7e6, 0 0 60px #00d7e6, 0 0 70px #00d7e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #42c4db, 0 0 40px #42c4db, 0 0 50px #42c4db, 0 0 60px #42c4db, 0 0 70px #42c4db, 0 0 80px #42c4db;
+    }
+  }
+
+  .nav-option:hover {
+    width: 40%;
+    height: 100%;
+    margin-top: 0;
+  }
+  #navleft:hover {
+    margin-right: -80px;
+  }
+  #navmiddle:hover {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  #navright:hover {
+    margin-left: -80px;
+  }
