@@ -1,21 +1,28 @@
 body {
     background-color: #090314;
     background-image: url("../../images/brickwall.jpg");
-    background-size: cover;
+    background-size: 150vw;
     background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
 }
 
 h1, h2 {
     text-align: center;
     color: snow;
+    line-height: 40%;
 }
 h1 {
     font-family: iceland;
     font-size: 60pt;
+    padding: 0px;
 }
 h2 {
     font-family: nico moji;
     font-size: 30pt;
+    padding: 0px;
 }
 .neon {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -45,26 +52,28 @@ h2 {
     height: 80%;
     margin-top: 40px;
   }
-  .nav-option h3, .nav-option h4 {
+  .nav-option a{
     width: 100%;
-    text-align: center;
     color: #42c4db;
+    line-height: 110%;
+    text-decoration: none;
+    display: block;
   }
- .nav-option h3 {
+ .nav-option .nav-link-eng {
     font-family: iceland;
     font-size: 30pt;
 }
-  .nav-option h4 {
+  .nav-link-jp {
     font-family: nico moji;
     font-size: 15pt;
 }
-  .nav-option:hover h3 {
+  .nav-option:hover .nav-link-eng {
     font-size: 40pt;
   }
-  .nav-option:hover h4 {
+  .nav-option:hover .nav-link-jp {
     font-size: 20pt;
   }
-  .nav-option:hover h3, .nav-option:hover h4 {
+  .nav-option:hover a, .nav-option:hover h4 {
     color: snow;
     -webkit-animation: glow2 1s ease-in-out infinite alternate;
     -moz-animation: glow2 1s ease-in-out infinite alternate;
@@ -83,15 +92,6 @@ h2 {
   .nav-option:hover {
     width: 40%;
     height: 100%;
-    margin-top: 0;
+    margin-top: 20px;
   }
-  #navleft:hover {
-    margin-right: -80px;
-  }
-  #navmiddle:hover {
-    margin-left: -40px;
-    margin-right: -40px;
-  }
-  #navright:hover {
-    margin-left: -80px;
-  }
+  
