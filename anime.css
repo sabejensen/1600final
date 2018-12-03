@@ -1,0 +1,51 @@
+body {
+    background-color: #090314;
+    background-image: url("../../images/red-valley.png");
+    background-size: cover;
+}
+header {
+    display: flex;
+}
+header div {
+    width: 50%;
+}
+a {
+    text-align: left;
+    font-family: iceland;
+    text-decoration: none;
+    font-size: 28px;
+    color: snow;
+}
+a:active {
+    color: grey;
+}
+h1, h2 {
+    text-align: right;
+    color: snow;
+    line-height: 40%;
+    margin-right: 20px;
+}
+h1 {
+    font-family: iceland;
+    font-size: 40pt;
+    padding: 0px;
+}
+h2 {
+    font-family: nico moji;
+    font-size: 25pt;
+    padding: 0px;
+}
+.neon, a:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6ad, 0 0 40px #00e6ad, 0 0 50px #00e6ad, 0 0 60px #00e6ad, 0 0 70px #00e6ad;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #0ef0f8, 0 0 40px #0ef0f8, 0 0 50px #0ef0f8, 0 0 60px #0ef0f8, 0 0 70px #0ef0f8, 0 0 80px #0ef0f8;
+    }
+  }
