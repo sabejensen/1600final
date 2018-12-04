@@ -110,7 +110,7 @@ let bonusCard = [
     {
     mal_id: 31964,
     image_url: "https://myanimelist.cdn-dena.com/images/anime/10/78745.jpg",
-    trailer_url: "https://www.youtube.com/embed/D5fYOnwYkj4?enablejsapi=1&wmode=opaque&autoplay=1",
+    trailer_url: "https://www.youtube.com/embed/D5fYOnwYkj4",
     title: "Boku no Hero Academia",
     source: "Manga",
     episodes: 13,
