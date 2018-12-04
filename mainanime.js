@@ -194,7 +194,33 @@ let bonusCard = [
         name: "Comedy",
         }]
     },
-
+    {
+    mal_id: 10800,
+    image_url: "https://cdn.myanimelist.net/images/anime/3/35749.jpg",
+    trailer_url: null,
+    title: "Chihayafuru",
+    source: "Manga",
+    episodes: 25,
+    aired: {
+        prop: {
+            from: {
+                year: 2011
+                },
+            },
+        },
+    score: 8.28,
+    studios: [
+        {
+        name: "Madhouse",
+        }],
+    genres: [
+        {
+        name: "Drama",
+        },
+        {
+        name: "Game",
+        }]
+    },
 ];
 
 
@@ -204,7 +230,7 @@ animeButton.textContent = "Press for New Card";
 animeCards.appendChild(animeButton);
 
 animeButton.addEventListener("click", () => {
-    var rng = Math.floor(Math.random() * 4)
+    var rng = Math.floor(Math.random() * 5)
     cardFunction(bonusCard[rng])
     bonusCard[rng].mal_id++;
 })
