@@ -167,6 +167,33 @@ let bonusCard = [
         url: "https://myanimelist.net/anime/genre/31/Super_Power"
     }]
     },
+    {
+    mal_id: 16742,
+    image_url: "https://cdn.myanimelist.net/images/anime/12/51619.jpg",
+    trailer_url: "https://www.youtube.com/embed/IJjsjU0Dwpo",
+    title: "Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!",
+    source: "Web manga",
+    episodes: 12,
+    aired: {
+        prop: {
+            from: {
+                year: 2013
+                },
+                },
+            },
+    score: 7.22,
+    studios: [
+        {
+        name: "Silver Link.",
+        }],
+    genres: [
+        {
+        name: "Slice of Life",
+        },
+        {
+        name: "Comedy",
+        }]
+    },
 
 ];
 
@@ -177,7 +204,7 @@ animeButton.textContent = "Press for New Card";
 animeCards.appendChild(animeButton);
 
 animeButton.addEventListener("click", () => {
-    var rng = Math.floor(Math.random() * 3)
+    var rng = Math.floor(Math.random() * 4)
     cardFunction(bonusCard[rng])
     bonusCard[rng].mal_id++;
 })
