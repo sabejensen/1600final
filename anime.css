@@ -1,10 +1,14 @@
 body {
     background-color: #090314;
-    background-image: url("../../images/red-valley.png");
+    background-image: url("../../images/red-valley-extend.png");
     background-size: cover;
 }
 header {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 header div {
     width: 50%;
@@ -22,8 +26,7 @@ a:active {
 h1, h2 {
     text-align: right;
     color: snow;
-    line-height: 40%;
-    margin-right: 20px;
+    line-height: 60%;
 }
 h1 {
     font-family: iceland;
@@ -48,4 +51,98 @@ h2 {
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #0ef0f8, 0 0 40px #0ef0f8, 0 0 50px #0ef0f8, 0 0 60px #0ef0f8, 0 0 70px #0ef0f8, 0 0 80px #0ef0f8;
     }
+  }
+
+  #card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #new-card-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #card-title {
+    margin-top: -290px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  #card-div button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  /* CARD FLIPPING */
+
+  .cardWrap {
+    background-color: transparent;
+    width: 225px;
+    height: 342px;
+    margin: 6px 6px 6px 6px;
+    perspective: 600px;
+  }
+  .cardWrapInt {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  .cardWrapInt.is-flipped {
+    transform: rotateY(180deg);
+  }
+  .cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 5px 5px 5px black;
+  }
+  .cardFront {
+    background-color: snow;
+    color: black;
+  }
+
+  .cardFront img {
+    width: 100%;
+    height: 100%;
+  }
+  .cardBack {
+    background-image: url("../../images/cardback.jpg");
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 25px 25px 25px 25px;
+    text-align: left;
+    font-size: 10pt;
+    font-family: monospace;
+    line-height: 90%;
+  }
+  .cardBack hr {
+    border: .25px dotted white;
+    line-height: 30%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .cardBack p {
+    margin-bottom: 1px;
+  }
+  .cardBack iframe {
+    height: 40%;
+    width: 124%;
+    margin-left: -12%;
+    margin-bottom: 8px;
+  }
+  h8 {
+    font-size: 10pt;
+    font-family: monospace;
+    color: white;    
+    font-weight: bold;
+    line-height: 90%;
   }
