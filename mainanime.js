@@ -106,7 +106,8 @@ animeCards.appendChild(newCardDiv);
 locationVar = newCardDiv;
 
 
-let bonusCard = {
+let bonusCard = [
+    {
     mal_id: 31964,
     image_url: "https://myanimelist.cdn-dena.com/images/anime/10/78745.jpg",
     trailer_url: "https://www.youtube.com/embed/D5fYOnwYkj4?enablejsapi=1&wmode=opaque&autoplay=1",
@@ -132,15 +133,53 @@ let bonusCard = {
         {
         name: "Comedy",
     }],
-};
+    },
+    {
+    mal_id: 21603,
+    image_url: "https://cdn.myanimelist.net/images/anime/11/61519.jpg",
+    trailer_url: "https://www.youtube.com/embed/J4KkvN2qipg",
+    title: "Mekakucity Actors",
+    source: "Music",
+    episodes: 12,
+    aired: {
+        prop: {
+            from: {
+                year: 2014
+                },
+            },
+        },
+    score: 7.18,
+    studios: [
+        {
+        name: "Shaft",
+        }],
+    genres: [
+        {
+        name: "Sci-Fi",
+        },
+        {
+        name: "Comedy",
+        },
+        {
+        mal_id: 31,
+        type: "anime",
+        name: "Super Power",
+        url: "https://myanimelist.net/anime/genre/31/Super_Power"
+    }]
+    },
+
+];
+
+
 
 let animeButton = document.createElement("button");
 animeButton.textContent = "Press for New Card";
 animeCards.appendChild(animeButton);
 
 animeButton.addEventListener("click", () => {
-    cardFunction(bonusCard)
-    bonusCard.mal_id++;
+    var rng = Math.floor(Math.random() * 3)
+    cardFunction(bonusCard[rng])
+    bonusCard[rng].mal_id++;
 })
 
 

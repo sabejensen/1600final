@@ -2,11 +2,12 @@ body {
     background-color: #090314;
     background-image: url("../../images/red-valley-extend.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 header {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -23,10 +24,14 @@ a {
 a:active {
     color: grey;
 }
+a:hover {
+    text-decoration: none;
+    color: snow;
+}
 h1, h2 {
     text-align: right;
     color: snow;
-    line-height: 60%;
+    line-height: 70%;
 }
 h1 {
     font-family: iceland;
@@ -46,10 +51,10 @@ h2 {
 
 @keyframes glow {
     from {
-       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6ad, 0 0 40px #00e6ad, 0 0 50px #00e6ad, 0 0 60px #00e6ad, 0 0 70px #00e6ad;
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1be600, 0 0 40px #1be600, 0 0 50px #1be600, 0 0 60px #1be600, 0 0 70px #1be600;
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #0ef0f8, 0 0 40px #0ef0f8, 0 0 50px #0ef0f8, 0 0 60px #0ef0f8, 0 0 70px #0ef0f8, 0 0 80px #0ef0f8;
+      text-shadow: 0 0 20px #fff, 0 0 30px #0ef0f8, 0 0 40px #0ef86f, 0 0 50px #0ef86f, 0 0 60px #0ef86f, 0 0 70px #0ef86f, 0 0 80px #0ef86f;
     }
   }
 
@@ -76,6 +81,8 @@ h2 {
     width: 100%;
     margin-left: 30%;
     margin-right: 30%;
+    font-family: iceland;
+    font-size: 18pt;
   }
   /* CARD FLIPPING */
 
