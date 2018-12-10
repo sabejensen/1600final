@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Final - Bear Constructor</title>
+    <link href="https://fonts.googleapis.com/css?family=Iceland|Kirang+Haerang|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="bear.css" rel="stylesheet" >
+</head>
+<body>
+<header>
+<div>
+    <a href="index.html">Back</a>
+</div>
+<div>
+    <h1 class="neon">Star Wars</h1>
+    <h2 class="neon">スター・ウォーズ</h2><br><br>
+</div>
+</header>
+<main>
+
+<div id="input-card" class="card">
+    <div class="card-body">
+        <h5  class="card-title">Bear Builder:</h5>
+        <span>Name:</span>
+        <label><input name="bear-name" placeholder="Charlie" class="text-box" value="Charlie"></label><br>
+        <span>Type:</span><br>
+        <label><input type="radio" name="bear-type" value="Polar Bear" id="polar">Polar Bear</label>
+        <label><input type="radio" name="bear-type" value="Grizzly Bear" id="grizzly">Grizzly Bear</label><br>
+        <label><input type="radio" name="bear-type" value="Teddy Bear" id="teddy">Teddy Bear</label>
+        <label><input type="radio" name="bear-type" value="Space Bear" id="space">Space Bear</label><br>
+        <label><span>Mood:<br></span><select name="bear-mood" class="bearinfo">
+            <option value="" disabled selected>--select--</option>
+            <option value="Adventurous" id="adventurous">Adventurous</option>
+            <option value="Jovial" id="jovial">Jovial</option>
+            <option value="Dignified" id="dignified">Dignified</option>
+            <option value="Solemn" id="solemn">Solemn</option>
+            <option value="Hangry" id="hangry">Hangry</option>
+        </select></label><br><br>
+
+        <button type="button" id="bear-button">BEAR PLEASE!</button>
+    </div>
+</div>
+
+<div id="result-card" class="card">
+    <div class="card-body">
+        <p id="bear-name-out">place</p>
+        <p id="bear-age-out">holder</p>
+        <p id="bear-type-out">for</p>
+        <p id="bear-mood-out">future</p>
+        <p id="bear-fur-out">things</p>
+    </div>
+</div>
+
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="module" src="bear.js"></script>
+</body>
+</html>

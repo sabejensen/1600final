@@ -1,0 +1,73 @@
+body {
+    background-color: #090314;
+    background-image: url("../../images/city.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 130px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+header div {
+    width: 50%;
+}
+a {
+    text-align: left;
+    font-family: iceland;
+    text-decoration: none;
+    font-size: 28px;
+    color: snow;
+}
+a:active {
+    color: grey;
+}
+a:hover {
+    text-decoration: none;
+    color: snow;
+}
+h1, h2 {
+    text-align: right;
+    color: snow;
+    line-height: 70%;
+}
+h1 {
+    font-family: iceland;
+    font-size: 40pt;
+    padding: 0px;
+}
+h2 {
+    font-family: nico moji;
+    font-size: 25pt;
+    padding: 0px;
+}
+.neon, a:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e65400, 0 0 40px #e65400, 0 0 50px #e65400, 0 0 60px #e65400, 0 0 70px #e65400;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f88b0e, 0 0 40px #f88b0e, 0 0 50px #f88b0e, 0 0 60px #f88b0e, 0 0 70px #f88b0e, 0 0 80px #f88b0e;
+    }
+  }
+
+
+.text-box {
+    height: 26apx;
+}
+.card {
+    font-family: iceland;
+    opacity: .9;
+}
+
+#input-card {
+    width: 340px;
+    margin-left: 20px;
+}
