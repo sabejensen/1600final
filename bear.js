@@ -1,81 +1,55 @@
 function Bear(name, type, mood) {
-let x = Math.floor(Math.random() * 20);
 
+   const x = (Math.floor(Math.random() * 25) + 1);
    this.name = name;
    this.age = x;
    this.type = type;
    this.mood = mood;
    this.fur = "Very soft"
-
+   this.introduction = () => `Hi human! My name is ${this.name}! I'm a ${this.type}!`
 }
 
+// use of constructor and template literal
+// proper use of arrow function
+
 const bearButton = document.getElementById("bear-button")
-
-let nameField = document.getElementById("bear-name")
-
-let polarField = document.getElementById("polar")
-let grizzlyField = document.getElementById("grizzly")
-let teddyField = document.getElementById("teddy")
-let spaceField = document.getElementById("space")
-
-let adventurousField = document.getElementById("adventurous")
-let jovialField = document.getElementById("jovial")
-let dignifiedField = document.getElementById("dignified")
-let solemnField = document.getElementById("solemn")
-let hangryField = document.getElementById("hangry")
 
 let nameOut = document.getElementById("bear-name-out")
 let ageOut = document.getElementById("bear-age-out")
 let typeOut = document.getElementById("bear-type-out")
 let moodOut = document.getElementById("bear-mood-out")
 let furOut = document.getElementById("bear-fur-out")
-
+let introOut = document.getElementById("bear-intro")
 
 bearButton.onclick = function() {
 
+    let nameArray = ["Barry", "Susie B. Berrington", "Rodalpho", "Marco Polo", "Stevensen", "Buddy", "Brenda", "Smokey", "Sandy Claws", "Persephone"]
 
-    if(nameField !== null && nameField.value) {
-        let bearName = nameField.value;
-    } else {
-        let nameArray = ["Sebastion", "Susie B. Berrington", "Barry", "Rodalpho", "Craig the Bear", "Daniel-san", "Santa Claws", "Brenda"];
-        
-        if(nameArray.length !== 0) {
-            let bearName = nameArray.shift();
-        } else {
-            let bearName = "YOU MUST CONSTRUCT ADDITIONAL PYLONS"
-        }
-    }
-
-    if(polarField.checked) {
-        let bearType = polarField.value;
-    } else if(grizzlyField.checked) {
-        let bearType = grizzlyField.value;
-    } else if(teddyField.checked) {
-        let bearType = teddyField.value;
-    } else if(spaceField.checked) {
-        let bearType = spaceField.value;
-    } else {
-        let bearType = "Black Bear";
-    }
-
-    if(adventurousField.selected) {
-        let bearMood = adventurousField.value;
-    } else if(jovialField.selected) {
-        let bearMood = jovialField.value;
-    } else if(dignifiedField.selected) {
-        let bearMood = dignifiedField.value;
-    } else if(solemnField.selected) {
-        let bearMood = solemnField.value;
-    } else if(hangryField.selected) {
-        let bearMood = hangryField.value;
-    } else {
-        let bearMood = "Aloof"
-    }
+    let typeArray = ["Polar Bear", "Grizzly Bear", "Space Bear", "Teddy Bear", "Black Bear", "Koala Bear", "Panda Bear", "Coca-Cola Bear", "Nuclear Bear", "Park Ranger Bear"]
     
+    let moodArray = ["Dignified", "Jovial", "Hangry", "Aloof", "Mischeivious", "Politically Active", "Fiscally Conservative", "Fearful", "Lazy", "Disgusted"]
+    
+    var a = Math.floor(Math.random() * 10)
+    var b = Math.floor(Math.random() * 10)
+    var c = Math.floor(Math.random() * 10)
+
+    let bearName = nameArray[a];
+
+    let bearType = typeArray[b];
+
+    let bearMood = moodArray[c];
+
     let bearBuild = new Bear(bearName, bearType, bearMood)
 
-    nameOut.textContent = bearBuild.name;
+    // use of custom JS objects
 
+    nameOut.textContent = bearBuild.name;
+    ageOut.textContent = bearBuild.age;
+    typeOut.textContent = bearBuild.type;
+    moodOut.textContent = bearBuild.mood;
+    furOut.textContent = bearBuild.fur;
+    introOut.textContent = bearBuild.introduction();
+    
+    // object properties accessed with dot notation
 }
 
-// add html placeholder, then use data to construct new bear, display new bear

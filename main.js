@@ -5,6 +5,7 @@ import {planets} from "/assets/planets.js"
 import {starships} from "/assets/starships.js"
 import {films} from "/assets/films.js"
 
+// proper use of import/export statements
 
 const vehiclesArray = vehicles.map(vehicles => vehicles.name);
 const filmsArray = films.map(films => films.title);

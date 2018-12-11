@@ -3,6 +3,8 @@ import {anime} from "/assets/anime.js"
 let animeCards = document.querySelector("#card-div");
 var locationVar = animeCards;
 
+// proper use of arrow functions
+
 const cardFunction = (element => {
     let currentID = element.mal_id;
 
@@ -223,6 +225,7 @@ let bonusCard = [
     },
 ];
 
+// use of arrays
 
 
 let animeButton = document.createElement("button");
@@ -234,14 +237,5 @@ animeButton.addEventListener("click", () => {
     cardFunction(bonusCard[rng])
     bonusCard[rng].mal_id++;
 })
-
-
-
-// swap trailer out for synopsis when null on final version. 
-// Synopsis can be pulled out in a box and toggled.
-
-// there are 39 vehicles in the vehiclesArray
-// add radio buttons so that the user can do a random film, 
-// character, planet, species, starship, or vehicle from Star Wars
 
 
