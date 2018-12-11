@@ -78,8 +78,3 @@ ranButton.onclick = function() {
     }
 
 }
-
-
-if(document.getElementById("red").checked = true) {
-
-}
