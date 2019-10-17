@@ -111,7 +111,7 @@ locationVar = newCardDiv;
 let bonusCard = [
     {
     mal_id: 31964,
-    image_url: "https://myanimelist.cdn-dena.com/images/anime/10/78745.jpg",
+    image_url: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
     trailer_url: "https://www.youtube.com/embed/D5fYOnwYkj4",
     title: "Boku no Hero Academia",
     source: "Manga",

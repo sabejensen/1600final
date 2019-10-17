@@ -76,5 +76,8 @@ ranButton.onclick = function() {
         const x = Math.floor(Math.random() * (37));
         randomSW.textContent = starshipsArray[x];
     }
+    else {
+        randomSW.textContent = "YOU MUST CONSTRUCT ADDITIONAL PYLONS"
+    }
 
 }

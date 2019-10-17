@@ -1,13 +1,14 @@
+
 function Bear(name, type, mood) {
 
-   const x = (Math.floor(Math.random() * 25) + 1);
    this.name = name;
-   this.age = x;
+   this.age = (Math.floor(Math.random() * 25) + 1);
    this.type = type;
    this.mood = mood;
-   this.fur = "Very soft"
+   this.fur = "Very soft";
    this.introduction = () => `Hi human! My name is ${this.name}! I'm a ${this.type}!`
 }
+
 
 // use of constructor and template literal
 // proper use of arrow function
